@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #F0F4FF 20%, #A5B6EE 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+.container { text-align: center; }
+.logo { color: white; font-size: 3rem; margin-bottom: 20px; letter-spacing: 5px; }
+
+.timer-card {
+    background-color: #4b5d92;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    width: 350px;
+}
+
+.timer-card h2 { color: white; margin-bottom: 30px; letter-spacing: 2px; }
+
+.timer-display {
+    display: flex;
+    justify-content: center;
+    gap: 6pX;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.time-unit { display: flex; flex-direction: column; align-items: center; }
+.time-unit span { color: #8a99c5; font-size: 12px; margin-bottom: 10px; }
+
+input[type="number"] {
+    width: 70px;
+    height: 70px;
+    background-color: #3b4a7a;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 40PX;
+    text-align: center;
+    outline: none;
+}
+
+.separator { color: white; font-size: 2rem; margin-top: 20px; }
+
+.controls { display: flex; gap: 15px; justify-content: center; }
+
+button {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: rgba(255, 255, 255, 0.4);
+    background-color: #3b4a7a; 
+    font-weight: 700;
+    cursor: not-allowed;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+button.enabled {
+    cursor: pointer;
+    color: white;
+    background-color: #516391;
+}
+
+
+button.is-pausing {
+    background-color: #26d0ce;
+    color: white;
+}
+
+
+
+.btn-start { background-color: #26d0ce; }
+.btn-pause { background-color: #26d0ce; }
+.btn-reset { background-color: #ff6b81; }
+
